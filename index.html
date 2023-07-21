@@ -32,7 +32,7 @@
                 </div>
                 <label for="classeB">B</label>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input" >
+                    <input type="radio" class="form-check-input">
                 </div>
                 <label for="classeC">C</label>
             </div>
@@ -40,11 +40,11 @@
                 <label for="ip-rede">Network IP</label>
                 <input v-model="network_ip" type="text" data-inputmask="'mask': '999.999.999.999'" id="ip-rede">
                 <label for="ip-rede">Decimal Network Mask</label>
-                <input type="text" data-inputmask="'mask': '999.999.999.999'" id="maskdec-rede">
+                <input v-model="dec_ntwork_mask" type="text" data-inputmask="'mask': '999.999.999.999'" id="maskdec-rede">
             </div>
             <div class="d-flex flex-row">
                 <label for="ip-rede">CIDR Network Mask</label>
-                <input type="text" data-inputmask="'mask': '999.999.999.999/99'" id="maskcid-rede">
+                <input v-model="cidr_ntwork_mask" type="text" data-inputmask="'mask': '999.999.999.999/99'" id="maskcid-rede">
                 <label for="network-select">Select Network</label>
                 <select class="custom-select" id="network-select">
                     
